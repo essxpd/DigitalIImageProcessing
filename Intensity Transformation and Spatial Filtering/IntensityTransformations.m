@@ -33,7 +33,7 @@ title('mandrill\_washedout.jpg Histogram');
 
 pdf_z = load('pdf_z.txt');
 
-subplot(3,2,5), bar(pdf_z);
+subplot(3,2,5.5), bar(pdf_z);
 title('target pdf');
 
 J = my_histspec(I, pdf_z);

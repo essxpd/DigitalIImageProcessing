@@ -10,8 +10,7 @@ function [ output ] = my_histeq( input )
     % Cumulative probability 
     cdf = cumsum(s / size(input(:),1));
     
-    % Map input to output 
-    output = cdf(input + 1) * maxIntensity;
+    output = maxIntensity * cdf(input + 1);
     output = uint8(output);
 end
 
